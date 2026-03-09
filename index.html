@@ -76,9 +76,15 @@ body{
 }
 
 .loading{
-    margin-center:120px;
-    font-size:28px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:42px;
+    font-weight:bold;
+    text-align:center;
     animation:fade 2s infinite alternate;
+    text-shadow:0 0 15px #ff1493, 0 0 25px #ff1493;
 }
     
 @keyframes fade{
