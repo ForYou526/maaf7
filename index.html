@@ -12,8 +12,8 @@ body{
     text-align:center;
     color:white;
     overflow:hidden;
-background: radial-gradient(circle at center,#000000 0%, #050012 40%, #000010 100%);
-background-attachment: fixed;
+    background: radial-gradient(circle at center,#000000 0%, #050012 40%, #000010 100%);
+}
 
 /* MUSIC BUTTON */
 .music-btn{
@@ -76,20 +76,10 @@ background-attachment: fixed;
 }
 
 .loading{
-    position:fixed;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    font-size:40px;
-    font-weight:bold;
-    text-align:center;
+    margin-center:50px;
+    font-size:35px;
     animation:fade 2s infinite alternate;
-    
-    background:transparent;
-    color:white;
-    text-shadow:0 0 10px #ff1493,0 0 20px #ff1493;
 }
-    
 @keyframes fade{
     from{opacity:0.5;}
     to{opacity:1;}
@@ -278,10 +268,7 @@ const loading=document.getElementById("loading");
 loading.style.display="block";
 
 const texts=[
-"kamu paling cantik sedunia 💖",
-"kamu paling gemesin sedunia 🥺",
-"kamu paling manis sedunia 💕",
-"kamu itu anugerah terindah 🌸"
+
 ];
 
 let i=0;
